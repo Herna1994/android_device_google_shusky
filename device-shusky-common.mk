@@ -20,6 +20,9 @@ ifeq (,$(TARGET_VENDOR_THERMAL_CONFIG_PATH))
 TARGET_VENDOR_THERMAL_CONFIG_PATH := device/google/shusky/thermal
 endif
 
+# Build
+BUILD_BROKEN_DUP_RULES := true
+
 PRODUCT_COPY_FILES += \
 	$(TARGET_VENDOR_THERMAL_CONFIG_PATH)/thermal_info_config_$(TARGET_DEVICE).json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
 	$(TARGET_VENDOR_THERMAL_CONFIG_PATH)/thermal_info_config_charge_$(TARGET_DEVICE).json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config_charge.json

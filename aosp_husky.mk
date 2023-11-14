@@ -30,3 +30,5 @@ PRODUCT_MANUFACTURER := Google
 
 DEVICE_MANIFEST_FILE := \
 	device/google/shusky/manifest.xml
+
+TARGET_PREBUILT_KERNEL := device/google/shusky-kernel/Image.lz4
